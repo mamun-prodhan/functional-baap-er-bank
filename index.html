@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Baap er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-center mt-8">Functional <span class="font-semibold text-red-400">Baap er Bank</span>!!!!</h1>
+    <main>
+        <section class="my-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-3xl mb-2">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-red-400 p-8 rounded-lg">
+                    <h4 class="text-3xl mb-2">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-blue-400 p-8 rounded-lg">
+                    <h4 class="text-3xl mb-2">Balance</h4>
+                    <h2 class="text-5xl">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- deposit with withdraw section -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="bg-indigo-400 p-8 rounded-lg">
+                    <h2 class="text-4xl">Your Deposit</h2>
+                    <input id="deposit-field" class="block p-3 my-4 w-3/4 rounded-lg" type="text" placeholder="$ Amount you want to deposit">
+                    <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-600 rounded-lg font-semibold" id="btn-deposit">Deposit</button>
+                </div>
+                <div class="bg-indigo-400 p-8 rounded-lg">
+                    <h2 class="text-4xl">Your Withdraw</h2>
+                    <input id="withdraw-field" class="block p-3 my-4 w-3/4 rounded-lg" type="text" placeholder="$ Amount you want to deposit">
+                    <button class="px-4 py-2 bg-yellow-400 hover:bg-yellow-600 rounded-lg font-semibold" id="btn-withdraw">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
